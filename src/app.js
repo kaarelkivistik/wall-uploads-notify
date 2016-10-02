@@ -26,7 +26,7 @@ wss.on("connection", socket => {
 });
 
 api.post("/notification", (req, res) => {
-	console.log("POST /notification", req);
+	console.log("POST /notification", req.body);
 
 	notifyClients(req.body);
 
